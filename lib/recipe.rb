@@ -29,7 +29,7 @@ class Recipe
 
   def to_csv_row
     # user the readers / getters
-    [name, description, difficulty, prep_time]
+    [name, description, difficulty, prep_time, done?]
   end
 
   def to_s

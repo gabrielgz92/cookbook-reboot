@@ -33,7 +33,8 @@ class Cookbook
         name: row[0],
         description: row[1],
         prep_time: row[2],
-        difficulty: row[3]
+        difficulty: row[3],
+        done: row[4] == "true"
       })
     end
   end
