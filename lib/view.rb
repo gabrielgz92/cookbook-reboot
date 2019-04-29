@@ -11,14 +11,14 @@ class View
     gets.chomp
   end
 
-  def ask_for_index(range)
-    puts "What recipe do you want to remove?"
+  def ask_for_index(action, range)
+    puts "What recipe do you want to #{action}?"
     print "> "
     index = gets.chomp
 
     # ensures user has picked a valid index
     until (index =~ /^\d+$/) && range.include?(index.to_i - 1)
-      puts "Please pick a valid number."
+      puts "Please pick a valid number. (1-#{range.size})"
       index = gets.chomp
     end
 

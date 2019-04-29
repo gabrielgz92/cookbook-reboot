@@ -1,0 +1,10 @@
+- Import recipes from the web (LetsCookFrench)
+  * Ask user for ingredient to import
+  * Visit LetsCookFrench results for that ingredient
+  * Ask user to pick a recipe from 5 results
+  * Add chosen recipe to the cookbook (repository)
+
+- Add a @prep_time property to Recipe
+- Mark a recipe as done (User Action)
+- Add a @difficulty property to Recipe
+- Parsing as a Service Object
